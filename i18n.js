@@ -5,9 +5,9 @@ window.SITE_I18N={
       index:{title:"Domácí technik v Ústí — výjezdové počítačové služby",description:"Výjezdové počítačové služby pro klidný a bezpečný domov. Diagnostika zdarma."},
       contact:{title:"Kontakt — Domácí technik v Ústí",description:"Kontakt na výjezdového mistra počítačových služeb."}
     },
-    a11y:{skip:"Přeskočit na služby",mainNav:"Hlavní navigace",careGrid:"Péče o počítač",securityGrid:"Bezpečí domova",learningGrid:"Učení a rozvoj",designGrid:"Design",cleaningCards:"Karty služby Čištění počítače",cleaningReasons:"Proč počítač pravidelně čistit",cleaningPackage:"Co zahrnuje komplexní čištění počítače",upgradeParts:"Možnosti modernizace počítače",softwareAreas:"Možnosti nastavení softwaru",repairAreas:"Možnosti opravy počítače",webcamAreas:"Možnosti služby Wi-Fi kamery",alarmAreas:"Možnosti služby Domácí alarm",appliancesAreas:"Možnosti služby Chytrá domácnost",literacyAreas:"Možnosti služby Počítačová gramotnost",tutorAreas:"Možnosti doučování informatiky",chessAreas:"Možnosti výuky šachu",developmentAreas:"Možnosti služby Vysoké technologie",developmentSamples:"Ukázky služby Vysoké technologie",flyerFlow:"Průběh služby Letáky",flyerSamples:"Další ukázky letáků",printAreas:"Možnosti služby Tisk",webTypes:"Možné typy webových stránek"},
+    a11y:{skip:"Přeskočit na služby",mainNav:"Hlavní navigace",careGrid:"Péče o počítač",securityGrid:"Bezpečí domova",learningGrid:"Učení a rozvoj",designGrid:"Tvorba a tisk",cleaningCards:"Karty služby Čištění počítače",cleaningReasons:"Proč počítač pravidelně čistit",cleaningPackage:"Co zahrnuje komplexní čištění počítače",upgradeParts:"Možnosti modernizace počítače",softwareAreas:"Možnosti nastavení softwaru",repairAreas:"Možnosti opravy počítače",webcamAreas:"Možnosti služby Wi-Fi kamery",alarmAreas:"Možnosti služby Domácí alarm",appliancesAreas:"Možnosti služby Chytrá domácnost",literacyAreas:"Možnosti služby Počítačová gramotnost",tutorAreas:"Možnosti doučování informatiky",chessAreas:"Možnosti výuky šachu",developmentAreas:"Možnosti služby Vysoké technologie",developmentSamples:"Ukázky služby Vysoké technologie",flyerFlow:"Průběh služby Letáky",flyerSamples:"Další ukázky letáků",printAreas:"Možnosti služby Tisk",webTypes:"Možné typy webových stránek"},
     images:{heroMain:"Mistr počítačových služeb",heroHelp:"Mistr připravený pomoci"},
-    nav:{home:"Služby",contact:"Kontakt",care:"Péče",safe:"Bezpečí",learn:"Učení",design:"Design"},
+    nav:{home:"Služby",contact:"Kontakt",care:"Péče",safe:"Bezpečí",learn:"Učení",design:"Tvorba a tisk"},
     hero:{
       eyebrow:"Bezpečný byt • klidná technika",
       title:"Technika ve vaší domácnosti — po celý rok v pohodě.",
@@ -24,7 +24,7 @@ window.SITE_I18N={
       care:{title:"Péče o počítač",lead:"Pravidelná péče, díky které technika doma slouží klidněji."},
       security:{title:"Bezpečí domova",lead:"Kamery, alarm a chytrá zařízení pro větší pocit jistoty."},
       learning:{title:"Učení a rozvoj",lead:"Trpělivá výuka, doučování a logika vlastním tempem."},
-      design:{title:"Design",lead:"Letáky, tisk, web-design a programování, které dávají nápadům jasnou podobu."}
+      design:{title:"Tvorba a tisk",lead:"Letáky, tisk, web-design a programování, které dávají nápadům jasnou podobu."}
     },
     contact:{
       eyebrow:"Bez spěchu a srozumitelně",
@@ -207,7 +207,7 @@ window.SITE_I18N={
       print:{code:"4.2",title:"Tisk",image:"printer",short:"Fotografie a dokumenty připravené bez hledání nastavení.",text:"Když potřebujete vytisknout fotografie, formuláře, školní materiály nebo běžné dokumenty, nemusíte bojovat s tiskárnou, velikostí stránky ani formátem souboru. Připravím tisk tak, aby byl výsledek čitelný, upravený a použitelný hned po převzetí. Pomůžu i s drobnou kontrolou dokumentu, exportem do PDF nebo výběrem vhodného formátu fotografie."},
       web:{code:"4.3",title:"Web-design",short:"Stránky pro portfolio, nabídku služeb, reklamu i katalog.",text:"Webová stránka má člověku rychle říct, kdo jste, co nabízíte a jak vás kontaktovat. Pomůžu navrhnout přehledný web pro službu, malou firmu, spolek nebo osobní projekt: portfolio, prezentační stránku, reklamu konkrétní nabídky, katalog zboží, stránku pro akci nebo jednoduchý kontaktní web. Společně ujasníme strukturu, texty, fotografie a styl, aby stránka působila profesionálně a zůstala srozumitelná běžným návštěvníkům."},
       programming:{code:"4.4",title:"Programování",short:"Malé aplikace a nástroje, které šetří čas.",text:"Někdy už nestačí leták ani jednoduchá stránka, protože potřebujete vlastní formulář, katalog, evidenci, kalkulačku nebo jiný malý nástroj na míru. Jsem vystudovaný vývojář softwaru a pomůžu převést nápad do praktického řešení, které se bude dobře používat. Začneme popisem toho, co má program lidem usnadnit, a teprve potom vybereme nejjednodušší rozumnou cestu. Cílem není složitá technika pro efekt, ale aplikace, která šetří čas a pomáhá vaší práci."},
-      design:{code:"4",title:"Design",short:"Letáky, stránky a katalogy, které budí důvěru.",text:"Když potřebujete plakát, leták, stránku pro službu nebo jednoduchý katalog, je důležité, aby vše vypadalo čistě a bylo lidem hned jasné. Pomůžu proměnit váš nápad v hezký a praktický materiál bez zbytečné složitosti. Začít můžeme obyčejným rozhovorem: co chcete ukázat, komu a proč. Výsledkem je vzhled, který budí důvěru a pomáhá o vaší práci mluvit srozumitelně."}
+      design:{code:"4",title:"Tvorba a tisk",short:"Letáky, stránky a katalogy, které budí důvěru.",text:"Když potřebujete plakát, leták, stránku pro službu nebo jednoduchý katalog, je důležité, aby vše vypadalo čistě a bylo lidem hned jasné. Pomůžu proměnit váš nápad v hezký a praktický materiál bez zbytečné složitosti. Začít můžeme obyčejným rozhovorem: co chcete ukázat, komu a proč. Výsledkem je vzhled, který budí důvěru a pomáhá o vaší práci mluvit srozumitelně."}
     }
   }
 };
