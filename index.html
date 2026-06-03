@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650;9..144,800&family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body data-page="index">
+<a class="skip" href="#sluzby" data-i18n="a11y.skip"></a>
+<header class="site-header">
+  <nav class="nav" data-i18n-attr="aria-label:a11y.mainNav">
+    <a class="brand" href="./index.html"><span class="brand-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></span> <span data-i18n="meta.brand"></span></a>
+    <div class="nav-links">
+      
+      <a href="./index.html#pece" data-i18n="nav.care"></a>
+      <a href="./index.html#bezpeci" data-i18n="nav.safe"></a>
+      <a href="./index.html#uceni" data-i18n="nav.learn"></a>
+      <a href="./index.html#design" data-i18n="nav.design"></a>
+      <a href="./kontakt.html" data-i18n="nav.contact"></a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-glow hero-glow-one"></div>
+    <div class="hero-glow hero-glow-two"></div>
+    <div>
+      <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+      <h1 data-i18n="hero.title"></h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+    </div>
+    <a class="hero-card hero-swap hero-card-link" href="./kontakt.html" data-i18n-attr="aria-label:hero.secondary">
+      <img class="main" src="./img/hero--main.png" data-i18n-attr="alt:images.heroMain" loading="eager">
+      <img class="hover" src="./img/hero--hover.png" alt="" aria-hidden="true" loading="lazy">
+    </a>
+    <div class="info-strip hero-info" data-strip></div>
+  </section>
+  <span id="sluzby" class="anchor-target" aria-hidden="true"></span>
+  <section id="pece" class="service-group first-service-group">
+    <header class="group-head">
+      <span class="group-num">01</span>
+      <div>
+        <h2 data-i18n="groups.care.title"></h2>
+        <p data-i18n="groups.care.lead"></p>
+      </div>
+    </header>
+    <div class="grid" data-services-grid data-service-group="care" data-i18n-attr="aria-label:a11y.careGrid"></div>
+  </section>
+  <section id="bezpeci" class="service-group accent">
+    <div class="service-group-inner">
+      <header class="group-head">
+        <span class="group-num">02</span>
+        <div>
+          <h2 data-i18n="groups.security.title"></h2>
+          <p data-i18n="groups.security.lead"></p>
+        </div>
+      </header>
+      <div class="grid" data-services-grid data-service-group="security" data-i18n-attr="aria-label:a11y.securityGrid"></div>
+    </div>
+  </section>
+  <section id="uceni" class="service-group">
+    <header class="group-head">
+      <span class="group-num">03</span>
+      <div>
+        <h2 data-i18n="groups.learning.title"></h2>
+        <p data-i18n="groups.learning.lead"></p>
+      </div>
+    </header>
+    <div class="grid" data-services-grid data-service-group="learning" data-i18n-attr="aria-label:a11y.learningGrid"></div>
+  </section>
+  <section id="design" class="service-group accent">
+    <div class="service-group-inner">
+      <header class="group-head">
+        <span class="group-num">04</span>
+        <div>
+          <h2 data-i18n="groups.design.title"></h2>
+          <p data-i18n="groups.design.lead"></p>
+        </div>
+      </header>
+      <div class="grid" data-services-grid data-service-group="design" data-i18n-attr="aria-label:a11y.designGrid"></div>
+    </div>
+  </section>
+  <section class="cta" id="kontakt">
+    <div class="contact-card">
+      <div>
+        <p class="eyebrow" data-i18n="sections.contactEyebrow"></p>
+        <h2 data-i18n="sections.contactTitle"></h2>
+        <p class="lead" data-i18n="sections.contactLead"></p>
+        <a class="btn" href="./kontakt.html" data-i18n="sections.contactButton"></a>
+      </div>
+      <img class="hero-mini" src="./img/master02.png" data-i18n-attr="alt:images.heroHelp" loading="lazy">
+    </div>
+  </section>
+</main>
+<script src="./i18n.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
