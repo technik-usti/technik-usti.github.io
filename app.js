@@ -52,6 +52,69 @@
       if(links) navLinks.insertAdjacentHTML("afterbegin",links);
     }
   }
+  const setupResponsiveNav=()=>{
+    document.querySelectorAll(".site-header .nav").forEach((nav,index)=>{
+      const links=nav.querySelector(".nav-links");
+      if(!links) return;
+      const button=document.createElement("button");
+      const menuId=links.id || `site-nav-links-${index+1}`;
+      links.id=menuId;
+      button.className="nav-toggle";
+      button.type="button";
+      button.setAttribute("aria-controls",menuId);
+      button.setAttribute("aria-expanded","false");
+      button.setAttribute("aria-label",dict.a11y.menuOpen);
+      button.innerHTML='<span aria-hidden="true"></span>';
+      nav.appendChild(button);
+
+      const setOpen=(open)=>{
+        nav.classList.toggle("is-open",open);
+        button.setAttribute("aria-expanded",open ? "true" : "false");
+        button.setAttribute("aria-label",open ? dict.a11y.menuClose : dict.a11y.menuOpen);
+      };
+      const update=()=>{
+        const wasOpen=nav.classList.contains("is-open");
+        nav.classList.remove("is-collapsed","is-open");
+        const brand=nav.querySelector(".brand");
+        const navStyle=getComputedStyle(nav);
+        const linksStyle=getComputedStyle(links);
+        const navGap=parseFloat(navStyle.columnGap || navStyle.gap) || 0;
+        const linksGap=parseFloat(linksStyle.columnGap || linksStyle.gap) || 0;
+        const navPadding=(parseFloat(navStyle.paddingLeft) || 0) + (parseFloat(navStyle.paddingRight) || 0);
+        const brandWidth=brand ? brand.getBoundingClientRect().width : 0;
+        const linksWidth=Array.from(links.children).reduce((sum,item)=>sum+item.getBoundingClientRect().width,0) + Math.max(0,links.children.length-1)*linksGap;
+        const availableWidth=nav.clientWidth-navPadding-brandWidth-navGap;
+        const shouldCollapse=linksWidth>availableWidth+1;
+        nav.classList.toggle("is-collapsed",shouldCollapse);
+        setOpen(shouldCollapse && wasOpen);
+      };
+      let pending=false;
+      const scheduleUpdate=()=>{
+        if(pending) return;
+        pending=true;
+        requestAnimationFrame(()=>{
+          pending=false;
+          update();
+        });
+      };
+
+      button.addEventListener("click",()=>setOpen(!nav.classList.contains("is-open")));
+      links.addEventListener("click",(event)=>{
+        if(event.target.closest("a")) setOpen(false);
+      });
+      document.addEventListener("pointerdown",(event)=>{
+        if(nav.classList.contains("is-open") && !nav.contains(event.target)) setOpen(false);
+      });
+      document.addEventListener("keydown",(event)=>{
+        if(event.key==="Escape") setOpen(false);
+      });
+      window.addEventListener("resize",scheduleUpdate);
+      if("ResizeObserver" in window) new ResizeObserver(scheduleUpdate).observe(nav);
+      if(document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleUpdate);
+      scheduleUpdate();
+    });
+  };
+  setupResponsiveNav();
   const serviceNav=document.querySelector("[data-service-nav]");
   if(serviceNav && service){
     const order=window.SERVICE_ORDER||[];
