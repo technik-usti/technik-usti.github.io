@@ -37,7 +37,7 @@ window.SITE_I18N={
       messengerHref:"https://wa.me/message/AOUFTCOHC2KBN1",
       telegramHref:"https://t.me/technik_usti",
       emailLabel:"E-mail",emailValue:"technikpocitacovy@gmail.com",
-      phoneLabel:"Telefon",phoneValue:"+420 720 474 287",
+      phoneLabel:"Telefon",phoneValue:"+420 720 473 983",
       viberLabel:"Viber",viberValue:"+420 720 474 287",
       facebookMessengerLabel:"Facebook",facebookMessengerValue:"Počítačové služby",
       messengerLabel:"WhatsApp",messengerValue:"+420 721 125 356",
