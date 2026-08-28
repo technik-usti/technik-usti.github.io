@@ -31,7 +31,7 @@ window.SITE_I18N={
       title:"Kontakt",
       lead:"Napište nebo zavolejte, když vám technika doma, při učení nebo v práci bere klid. První diagnostika je zdarma a začneme prostě: co se stalo a jak můžu pomoci.",
       emailHref:"mailto:technikpocitacovy@gmail.com",
-      phoneHref:"tel:+420720474287",
+      phoneHref:"tel:+420720473983",
       viberHref:"viber://chat?number=%2B420720474287",
       facebookMessengerHref:"https://www.facebook.com/profile.php?id=61590346725123",
       messengerHref:"https://wa.me/message/AOUFTCOHC2KBN1",
